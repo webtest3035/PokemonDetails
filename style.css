@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    background-color: hsl(240, 95%, 7%);
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    margin: 4rem;
+    font-size: 3rem;
+}
+
+.input-details {
+    border: 0.01rem solid rgb(225, 225, 225);
+    width: fit-content;
+    margin: 2.5rem auto;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}
+
+.input-details input {
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.input-details button {
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: white;
+
+}
+
+.input-details button:hover {
+    transition: ease-in-out 0.4s;
+    background-color: hsl(0, 5%, 93%);
+    cursor: pointer;
+    box-shadow: 0 0 0.7rem hsl(0, 3%, 94%);
+}
+
+#pokemonName {
+    color: white;
+    text-align: center;
+}
+
+#icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#icon img {
+    height: 10rem;
+    margin: 3.5rem auto;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+
+.pokemons-details {
+    margin: 1rem;
+    font-size: 1.5rem;
+    border: 0.01rem solid rgb(225, 225, 225);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+}
+
+@media (max-width:64rem) {
+
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:48rem) {
+
+    html {
+        font-size: 37.5%;
+    }
+}
+
+@media (max-width:36rem) {
+
+    html {
+        font-size: 37.5%;
+    }
+}
+
+@media (max-width:36rem) {
+
+    html {
+        font-size: 25%;
+    }
+}
