@@ -83,27 +83,20 @@ html {
 @media (max-width:64rem) {
 
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
 }
 
 @media (max-width:48rem) {
 
     html {
-        font-size: 37.5%;
+        font-size: 45.5%;
     }
 }
 
 @media (max-width:36rem) {
 
     html {
-        font-size: 37.5%;
-    }
-}
-
-@media (max-width:36rem) {
-
-    html {
-        font-size: 25%;
+        font-size: 40%;
     }
 }
