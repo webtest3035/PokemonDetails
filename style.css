@@ -80,6 +80,14 @@ html {
     padding: 0.8rem;
 }
 
+#loading {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10rem;
+    color: white;
+}
+
 @media (max-width:64rem) {
 
     html {

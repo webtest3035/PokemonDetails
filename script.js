@@ -6,6 +6,7 @@ let pokemonHeight = document.getElementById("pokemonHeight");
 let pokemonWeight = document.getElementById("pokemonWeight");
 let pokemonType = document.getElementById("pokemonType");
 let pokemonAbility = document.getElementById("pokemonAbility");
+const loading = document.getElementById("loading");
 
 
 pokemonInputSubmit.addEventListener("click", async () => {
@@ -20,12 +21,21 @@ pokemonInputSubmit.addEventListener("click", async () => {
         return;
     }
 
+
+    showLoading();
+
     try {
 
         let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
 
-        if (!response.ok) {
-            throw new Error("Responce is not ok !");
+         if (response.status === 404) {
+            alert("Pokemon not found !");
+            return;
+        }
+
+        if (response.status === 500) {
+            alert("Server error");
+            return;
         }
 
         let data = await response.json();
@@ -46,8 +56,19 @@ pokemonInputSubmit.addEventListener("click", async () => {
 
     catch (error) {
         console.error(error);
-        alert("Pokemon not found !");
-        return;
+    }
+
+    finally {
+        hideLoading();
     }
 
 })
+
+
+function showLoading() {
+    loading.style.display = "block";
+}
+
+function hideLoading() {
+    loading.style.display = "none";
+}
