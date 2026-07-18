@@ -10,4 +10,4 @@ Language Used :- HTML, CSS, JavaScript
 
 image :- 
 
-![Home Page](img/Search-Movies.png)
+![Home Page](img/Pokemon-Details.png)
